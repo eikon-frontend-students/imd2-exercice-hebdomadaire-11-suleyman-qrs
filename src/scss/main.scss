@@ -12,3 +12,56 @@ img,
 video {
   display: block;
 }
+
+body {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #111111;
+  font-family: Roboto;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.like-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 19px;
+  border: 2px solid #ff0000;
+  background-color: #ffffff;
+}
+
+.like-pill__icon {
+  font-size: 18px;
+  color: #ff0000;
+}
+
+.like-pill__label {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 100% */
+}
+
+.like-pill__count {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 100% */
+}
+
+.like-pill--liked {
+  background: #ff0000;
+  border-color: #ff0000;
+}
+
+.like-pill--liked .like-pill__label,
+.like-pill--liked .like-pill__count,
+.like-pill--liked .like-pill__icon {
+  color: #ffffff;
+}
